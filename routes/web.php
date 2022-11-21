@@ -16,7 +16,7 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-Route::view('/', 'home');
+Route::view('/', 'home')->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
