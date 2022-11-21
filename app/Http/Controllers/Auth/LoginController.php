@@ -23,6 +23,6 @@ class LoginController extends Controller
             return back()->with('status', 'The given credentials are incorrect.');
         }
 
-        return redirect()->intended('home');
+        return redirect()->intended();
     }
 }
